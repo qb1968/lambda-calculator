@@ -1,22 +1,81 @@
 .container {
+    
     background-color: #c00025;
+    
     width: 100%;
     max-width: 550px;
     border-radius: 15px;
     border: 2px solid grey;
     padding-bottom: 25px;
+    height: 720px;
+    margin-left: 6px;
+    /* padding-left: 12px; */
+    justify-content: center;
 }
+
+
 .display {
     margin-top: 25px;
     height: 100px;
-    width: 450px;
+    width: 80%;
     border-radius: 50px;
     color: white;
     background-color: #322c2d;
     box-shadow: 1px 1px #322c2d;
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
     padding-right: 8%;
     font-size: 5.0rem;
   }
+  
+  
+/* .operators {
+    display: flex;
+     flex-direction: column;
+  }
+  .numbers {
+    display: flex;
+    flex-direction: row;
+     flex-wrap: wrap; 
+    width: 60%;
+  } */
+  .allBtn {
+    /* line-height: 2rem; */
+    display: grid;
+    /* text-align: center; */
+    grid-auto-columns: 1fr;
+    grid-template: "specs specs specs ops"
+                    "num num num ops"
+                    "num num numb ops"
+                    "num num num ops"
+                    "num num num ops";
+  }
+  button {
+     justify-content: center;
+     grid-row-gap: 20px;
+     grid-column-gap: 20px;
+    color: whitesmoke;
+    background: blue;
+    width: 18%;
+    border-radius: 60px;
+    padding: 17px;
+    border: double .5px;
+    margin:7px;
+    font-size: 2.0rem;
+    
+  }
+  .numDiv {
+    display: grid;
+    grid-template-columns: auto auto auto ;
+  }
+  .opsDiv {
+    display: grid;
+    grid-template-columns: auto;
+}
+button.specs {
+    background-color: purple;
+    /* display: flex; */
+    flex-direction: row;
+
+}
